@@ -1,5 +1,5 @@
 import { sidebar_items_light, theme_dark, theme_light } from ".";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import "./Sidebar.css";
 
