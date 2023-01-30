@@ -1,3 +1,7 @@
+:root {
+  --icon-size: 25px;
+}
+
 * {
   margin: 0;
   padding: 0;
