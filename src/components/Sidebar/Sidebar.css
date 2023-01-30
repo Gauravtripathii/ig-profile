@@ -1,9 +1,12 @@
 .sidebar {
-  width: 20%;
+  /* width: 20%; */
+  width: fit-content;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: 20px;
+  color: black;
 }
 
 .sidebar .icon {
@@ -25,4 +28,34 @@
 .sidebar .sidebar-item {
   width: 100%;
   display: flex;
+}
+
+/* tablet view */
+
+@media only screen and (max-width: 1250px) {
+  .sidebar {
+    width: fit-content;
+  }
+  .sidebar .text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .sidebar {
+    position: absolute;
+    bottom: 0;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: space-evenly;
+    width: 100%;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+  }
+  .sidebar .icon {
+    margin: 0;
+  }
+  .sidebar .sidebar-item {
+    width: fit-content;
+  }
 }

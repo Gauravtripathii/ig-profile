@@ -7,9 +7,9 @@ const Sidebar = () => {
   const sidebar_items = sidebar_items_light;
   const [theme, setTheme] = useState(1);
 
-//   const themeChangeHandler = () => {
+  //   const themeChangeHandler = () => {
 
-//   }
+  //   }
 
   //   useEffect({}, [theme]);
   return (
@@ -22,12 +22,13 @@ const Sidebar = () => {
           <div className="text">{item.text}</div>
         </div>
       ))}
-      <div className="icon" onClick={() => setTheme(theme+1)}>
-        <img
-          src={theme%2 != 0 ? theme_light : theme_dark}
-          alt="change theme icon"
-        />
-        {/* <img src={theme_light} alt="" /> */}
+      <div className="sidebar-item" onClick={() => setTheme(theme + 1)}>
+        <div className="icon">
+          <img
+            src={theme % 2 !== 0 ? theme_light : theme_dark}
+            alt="change theme icon"
+          />
+        </div>
       </div>
     </div>
   );
