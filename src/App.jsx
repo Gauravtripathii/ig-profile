@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
-      <div className="2">
+      <div className="two">
         <Header />
         <IG />
       </div>
