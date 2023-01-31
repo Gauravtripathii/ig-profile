@@ -28,7 +28,7 @@ function App() {
       <Sidebar changeTheme={changeTheme} />
       <div className="two">
         <Header />
-        <IG />
+        <IG theme={theme} />
       </div>
     </div>
   );

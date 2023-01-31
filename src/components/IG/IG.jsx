@@ -6,9 +6,11 @@ import "./IG.css";
 
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
-import { images } from ".";
+import { images_light, images_dark } from ".";
 
-const IG = () => {
+const IG = (props) => {
+  const theme = props.theme;
+  // console.log("-->", theme);
   return (
     <BrowserRouter>
       <div className="ig">
@@ -20,7 +22,10 @@ const IG = () => {
           <li>
             <NavLink to="posts">
               <div className="icon">
-                <img src={images[0]} alt="grid-icon" />
+                <img
+                  src={theme % 2 === 0 ? images_light[0] : images_dark[0]}
+                  alt="grid-icon"
+                />
               </div>
               <div className="text">POSTS</div>
             </NavLink>
@@ -28,7 +33,10 @@ const IG = () => {
           <li>
             <NavLink to="saved">
               <div className="icon">
-                <img src={images[1]} alt="save-icon" />
+                <img
+                  src={theme % 2 === 0 ? images_light[1] : images_dark[1]}
+                  alt="save-icon"
+                />
               </div>
               <div className="text">SAVED</div>
             </NavLink>
@@ -36,7 +44,10 @@ const IG = () => {
           <li>
             <NavLink to="tagged">
               <div className="icon">
-                <img src={images[2]} alt="tagged-icon" />
+                <img
+                  src={theme % 2 === 0 ? images_light[2] : images_dark[2]}
+                  alt="tagged-icon"
+                />
               </div>
               <div className="text">TAGGED</div>
             </NavLink>
