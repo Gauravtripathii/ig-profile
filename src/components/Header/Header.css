@@ -3,6 +3,8 @@
   padding: 50px;
   display: flex;
   align-items: center;
+  color: var(--color);
+  background-color: var(--bg);
 }
 
 .header .profile {
