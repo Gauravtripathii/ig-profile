@@ -4,6 +4,8 @@ import IG from "./components/IG/IG";
 
 import "./App.css";
 
+import { useState } from "react";
+
 function App() {
   return (
     <div className="app">

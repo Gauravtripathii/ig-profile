@@ -1,6 +1,9 @@
 :root {
   --icon-size: 25px;
   --profile-image: 200px;
+
+  --color: black;
+  --bg: white;
 }
 
 * {
